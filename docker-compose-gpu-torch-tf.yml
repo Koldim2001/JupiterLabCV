@@ -6,11 +6,11 @@ services:
       context: .
       dockerfile: dockerfiles/Dockerfile-gpu-torch-tf
     image: jupiter-gpu-torch-tf
-    container_name: jupiter-gpu-torch-tf
+    container_name: jupiterlab
     ports:
       - "8789:8789"
     volumes:
-      - /examples:/playground
+      - ./examples:/playground
     deploy:
       resources:
         reservations:

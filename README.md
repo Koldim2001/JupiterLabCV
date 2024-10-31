@@ -3,5 +3,10 @@
 
 
 ```
-docker-compose -f docker-compose-gpu-torch-tf.yml up --build
+docker-compose -f docker-compose-gpu-torch-tf.yml -p traffic_analyzer up -d --build
+```
+
+Как получить токен чтобы авторизоваться и создать пароль в среде Jupiter:
+```
+docker exec jupiterlab jupyter server list
 ```
