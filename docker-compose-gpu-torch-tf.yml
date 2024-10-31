@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  jupiter-gpu-torch-tf:
+    build:
+      context: .
+      dockerfile: dockerfiles/Dockerfile-gpu-torch-tf
+    image: jupiter-gpu-torch-tf
+    container_name: jupiter-gpu-torch-tf
+    ports:
+      - "8789:8789"
+    volumes:
+      - /examples:/playground
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
