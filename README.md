@@ -11,7 +11,7 @@
 ---
 ### Запуск сервиса JupiterLab:
 
-1) Тежелый образ, в котором имеется сразу TF и PyTorch с доступом к GPU:
+1) Тежелый образ, в котором имеется сразу TensorFlow и PyTorch с доступом к GPU:
 
 ```
 docker-compose -f docker-compose-gpu-torch-tf.yml -p jupiter_lab_cv up -d --build
