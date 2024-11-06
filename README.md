@@ -36,3 +36,10 @@ docker-compose -f docker-compose-cpu.yml -p jupiter_lab_cv up -d --build
 ```
 docker exec jupiterlab jupyter server list
 ```
+
+---
+
+### Туториал по настройке Linux сервера
+Помимо туториала по установке и запуску JupiterLab в репозитории содержится инструкция по настройке Linux сервера, которая поможет вам установить следующие компоненты: NVIDIA драйверы, CUDA Toolkit, Docker, NVIDIA Container Toolkit и Git. 
+
+Инструкция находится в файле [**server_setup.md**](). Следуя этой инструкции, вы сможете легко настроить ваш сервер для работы с GPU и другими необходимыми инструментами.
