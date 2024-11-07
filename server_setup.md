@@ -82,3 +82,12 @@ sudo systemctl restart docker
 docker run --rm --gpus all nvidia/cuda:11.6.2-base-ubuntu20.04 nvidia-smi
 ```
 ---
+## Portainer
+Можно еще установить Portainer для того, чтобы у Docker был UI. Это позволяет удобнее взаимодействовать с докером. После поднятия сервиса он будет работать на порту 9000.
+
+```
+docker volume create portainer_data
+docker run -d -p 8000:8000 -p 9443:9443 -p 9000:9000 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+```
+
+---
