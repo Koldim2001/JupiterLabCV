@@ -14,19 +14,19 @@
 1) Тежелый образ, в котором имеется сразу TensorFlow и PyTorch с доступом к GPU:
 
 ```
-docker-compose -f docker-compose-gpu-torch-tf.yml -p jupiter_lab_cv up -d --build
+docker compose -f docker-compose-gpu-torch-tf.yml -p jupiter_lab_cv up -d --build
 ```
 
 2) Более легкий образ, в котором имеется сразу PyTorch с доступом к GPU:
 
 ```
-docker-compose -f docker-compose-gpu-torch.yml -p jupiter_lab_cv up -d --build
+docker compose -f docker-compose-gpu-torch.yml -p jupiter_lab_cv up -d --build
 ```
 
 3) Самый легкий образ без доступа к GPU (CPU лишь имеется):
 
 ```
-docker-compose -f docker-compose-cpu.yml -p jupiter_lab_cv up -d --build
+docker compose -f docker-compose-cpu.yml -p jupiter_lab_cv up -d --build
 ```
 
 
